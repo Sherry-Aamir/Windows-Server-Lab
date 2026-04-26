@@ -100,26 +100,29 @@ In this lab environment, multiple infrastructure roles (AD DS, DNS, DHCP) are ho
 
 <img width="602" height="449" alt="05-Windows-Server-install-edition" src="https://github.com/user-attachments/assets/7d6809e7-c17b-45ef-b157-8a3cef3a33aa" />
 
-*Selecting the Windows Server 2022 Standard Evaluation edition with Desktop Experience.*
+*To begin the installation process click on next*
 
 <img width="602" height="449" alt="06-Windows-Server-install-edition" src="https://github.com/user-attachments/assets/970cfb11-7fa4-4ed0-8ebd-4b2f199e4484" />
 
-*Accepting the licence terms before continuing the installation.*
+*Selecting the Windows Server 2022 Standard Evaluation edition with Desktop Experience.*
+
 
 <img width="602" height="449" alt="07-Windows-Server-install" src="https://github.com/user-attachments/assets/da199515-85bc-49ae-b94b-a73355c6eeb6" />
+*Accepting the licence terms before continuing the installation.*
 
-*Choosing the Custom install option for a clean installation on the virtual disk.*
 
 <img width="602" height="447" alt="08-Windows-Server-install" src="https://github.com/user-attachments/assets/82cfade8-851c-4f58-8c31-c4cb10a2b014" />
 
-*Selecting the unallocated 65GB virtual disk as the install target.*
+*Choosing the Custom install option for a clean installation on the virtual disk.*
+
 
 <img width="602" height="448" alt="09-Windows-Server-install" src="https://github.com/user-attachments/assets/e472be13-075d-4214-ac7e-5d28ac92ac05" />
+*Just click next to continue*
 
-*Installation in progress, copying files and applying features.*
 
 <img width="602" height="445" alt="10-Windows-Server-install" src="https://github.com/user-attachments/assets/2fd8c4c8-9bb8-4af8-b845-98bb612efcdf" />
-
+*Installation in progress, copying files and applying features.*
+*Do note the machine will auto restart a couple of times*
 *Final stage of the installation prior to first boot.*
 
 <img width="1023" height="765" alt="11-Windows-Server-install" src="https://github.com/user-attachments/assets/4cadf19c-a0b9-4d2a-a0f9-7cb06a87bee9" />
