@@ -1,38 +1,34 @@
-# Windows Server Lab
+# Stage 1: Server Build
 
-A home lab building a Windows Server 2022 domain with Windows 11 clients. Documents the design, configuration, and troubleshooting of a small Active Directory environment.
+## Objective
+Create a Windows Server 2022 VM in VirtualBox and complete the base OS install. Prepare the machine for promotion to a domain controller.
 
-## Lab environment
+## VM specifications
+- Name: DC01 (unique name for domain controller)
+- OS: Windows Server 2022 Standard Evaluation (Desktop Experience)
+- RAM: 4096 MB
+- CPU: 2 cores
+- Disk: 60GB VDI, dynamically allocated
 
-- Host: Windows 11 Pro, AMD Ryzen 5 7600X, 32GB DDR5
-- Hypervisor: VirtualBox
-- Server: Windows Server 2022 Standard Evaluation (Desktop Experience)
-- Clients: Windows 11 Pro
+## Steps completed
+- Created the VM in VirtualBox
+- Installed Windows Server 2022 from evaluation ISO
+- Set local administrator password
+- Installed VirtualBox Guest Additions for clipboard sharing and improved display
+- Renamed the machine from default to DC01
+- Configured static IP on the internal lab adapter
 
-## Network design
+## Network configuration
+- LabNet adapter: 192.168.10.10 / 255.255.255.0
+- Default gateway: not set (no gateway on the internal lab network)
+- Preferred DNS: 127.0.0.1 (server is its own DNS once AD is promoted)
 
-- Subnet: 192.168.10.0/24
-- DC01 (Domain Controller): 192.168.10.10 (static)
-- DHCP scope: 192.168.10.100 to 192.168.10.110
-- DNS: hosted on DC01, authoritative for lab.local
+## Verification
+- `hostname` returns DC01
+- `ipconfig` shows correct IP on LabNet adapter
 
-## Stages
+## Issues encountered
+Initial dual adapter setup (Internal Network plus NAT) caused VirtualBox NAT routing issues, with pings failing despite a valid configuration. Resolved by simplifying the network design.
 
-1. [Server Build](./01-server-build/) — VM creation and base OS install
-2. [Active Directory](./02-active-directory/) — AD DS install, forest creation, DC promotion
-3. [DHCP and DNS](./03-dhcp-dns/) — DHCP scope and options, DNS verification
-4. [Clients](./04-clients/) — Windows 11 build and domain join
-5. [Group Policy](./05-group-policy/) — OUs, users, groups, GPOs
-
-## Skills demonstrated
-
-- Windows Server 2022 installation and configuration
-- Active Directory Domain Services
-- DNS and DHCP server setup
-- Group Policy management
-- Network troubleshooting
-- VirtualBox configuration and virtual networking
-
-## Notes
-
-This lab was built from scratch as a learning exercise to refresh skills last used during a college placement. Documentation includes troubleshooting steps and lessons learned where relevant.
+## Screenshots
+(to be added)
