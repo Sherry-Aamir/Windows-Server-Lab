@@ -147,13 +147,13 @@ In this lab environment, multiple infrastructure roles (AD DS, DNS, DHCP) are ho
 
 <img width="1023" height="765" alt="11-Windows-Server-install" src="https://github.com/user-attachments/assets/4cadf19c-a0b9-4d2a-a0f9-7cb06a87bee9" />
 
-*Final stage of installation prior to first boot.*
+*Final stage of installation prior to first boot. Enter an admin password for this machine*
 
 ---
 
 <img width="681" height="424" alt="12-Windows-Setup" src="https://github.com/user-attachments/assets/b5f8fe7d-99c7-4878-bc8a-0d76a80c92a6" />
 
-*Logging in as Administrator for the first time.*
+*Logging in as Administrator for the first time using password from previous step*
 
 ---
 
