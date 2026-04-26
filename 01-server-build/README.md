@@ -84,8 +84,6 @@ In this lab environment, multiple infrastructure roles (AD DS, DNS, DHCP) are ho
 
 ### Network Adapter settings
 
-
-
 <img width="762" height="479" alt="VirtualBox-Setup-6" src="https://github.com/user-attachments/assets/1f8e2f31-11bc-4b03-9243-805bd786e793" />
 
 *Caption here.*
@@ -129,6 +127,12 @@ In this lab environment, multiple infrastructure roles (AD DS, DNS, DHCP) are ho
 <img width="681" height="424" alt="12-Windows-Setup" src="https://github.com/user-attachments/assets/b5f8fe7d-99c7-4878-bc8a-0d76a80c92a6" />
 
 *Caption here.*
+
+
+<img width="602" height="478" alt="13-Windows-Setup" src="https://github.com/user-attachments/assets/dd90baa5-91f2-4c52-a54c-29d743de9aff" />
+
+*Caption here.*
+
 
 
 
