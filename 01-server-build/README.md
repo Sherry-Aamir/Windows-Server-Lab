@@ -156,6 +156,11 @@ In this lab environment, multiple infrastructure roles (AD DS, DNS, DHCP) are ho
 *Logging in as Administrator for the first time using password from previous step*
 
 ---
+### IP address setup
+
+
+
+
 
 ### Server Name Change
 
