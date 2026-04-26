@@ -61,23 +61,26 @@ In this lab environment, multiple infrastructure roles (AD DS, DNS, DHCP) are ho
 
 <img width="801" height="444" alt="VirtualBox-Setup-1" src="https://github.com/user-attachments/assets/a735505e-263a-45e8-8d07-940a60a24f02" />
 
-*Creating the new virtual machine in VirtualBox and naming it DC01.*
+*Creating the new virtual machine in VirtualBox*
+- By Selecting the ISO from my Downloads folder
+- The Edition, Type, and Version automatically filled in as seen. 
 
 <img width="806" height="440" alt="VirtualBox-Setup-2" src="https://github.com/user-attachments/assets/30ae983d-51db-4be6-9c3b-c1a0596fe9f8" />
 
-*Selecting the operating system type and version (Windows Server 2022 64-bit).*
+*Allocating RAM and CPU resources for the virtual machine.*
 
 <img width="799" height="441" alt="VirtualBox-Setup-3" src="https://github.com/user-attachments/assets/d5259355-15b8-441b-be00-037315364cf3" />
 
-*Allocating RAM and CPU resources for the virtual machine.*
+*Configuring the virtual hard disk as I have gone with 65GB*
 
 <img width="798" height="442" alt="VirtualBox-Setup-4" src="https://github.com/user-attachments/assets/1514079b-a809-4606-9ef8-0284c50b2ee0" />
 
-*Configuring the virtual hard disk as a 65GB VDI, dynamically allocated.*
+*Reviewing the final VM configuration before creation.*
+
 
 <img width="993" height="1030" alt="VirtualBox-Setup-5" src="https://github.com/user-attachments/assets/819ed4ba-3f9f-4b46-9363-367a658a15ed" />
 
-*Reviewing the final VM configuration before creation.*
+*We need to locate to the settings then continue onto the network adapters*
 
 ---
 
