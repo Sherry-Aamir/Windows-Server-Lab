@@ -13,7 +13,7 @@
 - RAM: 8192 MB  
 - CPU: 3 cores  
 - Disk: 65GB VDI (dynamically allocated)  
-
+s
 ---
 
 ## Steps Completed
