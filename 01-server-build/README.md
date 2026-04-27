@@ -23,25 +23,19 @@
 - Set local Administrator credentials  
 - Installed VirtualBox Guest Additions for clipboard sharing and improved display, along with any additional drivers (for VMware it would be VM Tools)  
 - Renamed the machine from default to DC01  
-- Configured a static IP on the internal lab adapter  
 
 ---
 
 ## Network Configuration
-- Adapter 1: NAT  
-- Adapter 2: Internal Network (LabNet)  
+- Adapter 1: NAT (used for internet access, updates, and package installation)
+- Adapter 2: Internal Network (LabNet) for inter-VM communication
 
-Internal network configuration:
-- IP Address: 192.168.10.10  
-- Subnet Mask: 255.255.255.0  
-- Default Gateway: Not set (no gateway on the internal lab network at this stage)  
-- Preferred DNS: 127.0.0.1 (loopback address, to be used once AD DS and DNS are installed)  
+Internal IP configuration is covered in Stage 2.
 
 ---
 
 ## Verification
 - `hostname` returns DC01  
-- `ipconfig` shows the correct IP on the LabNet adapter  
 
 ---
 
@@ -156,11 +150,6 @@ In this lab environment, multiple infrastructure roles (AD DS, DNS, DHCP) are ho
 *Logging in as Administrator for the first time using password from previous step*
 
 ---
-### IP address setup
-
-
-
-
 
 ### Server Name Change
 
