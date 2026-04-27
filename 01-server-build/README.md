@@ -174,3 +174,5 @@ In this lab environment, multiple infrastructure roles (AD DS, DNS, DHCP) are ho
 <img width="602" height="478" alt="13-Windows-Setup" src="https://github.com/user-attachments/assets/dd90baa5-91f2-4c52-a54c-29d743de9aff" />
 
 *Renaming the server to DC01. A restart is required for the change to take effect (already done at this stage).*
+
+
