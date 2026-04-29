@@ -20,6 +20,7 @@
 
 ## Steps Completed
 - Installed the Active Directory Domain Services role via Server Manager
+- Installed the DHCP role alongside AD DS for configuration in a later stage
 - Promoted DC01 to a domain controller using the AD DS Configuration Wizard
 - Created a new forest with the root domain `sherry.local`
 - Set the Directory Services Restore Mode (DSRM) recovery password
@@ -40,6 +41,7 @@
 
 ## Notes
 - DNS is automatically installed and configured as part of AD DS promotion. The DC becomes the authoritative DNS server for `sherry.local`.
+- The DHCP role was installed in this stage but will be configured separately in a later stage.
 - The DSRM password is a recovery credential used only when starting the DC in safe mode for directory repair. It is separate from the standard domain administrator password.
 - A single DC is sufficient for a lab environment, but in production a second DC would be deployed for redundancy and replication.
 
@@ -51,89 +53,91 @@
 
 <img width="1299" height="879" alt="1-Server Manager-Installing AD" src="https://github.com/user-attachments/assets/ec2da47d-c423-415e-98e8-276ab1a062b1" />
 
-*Locate onto the server manager and selected the Add Roles and Features menu. *
+*Opened Server Manager on DC01 and selected Add Roles and Features from the Manage menu.*
 
 ---
 
 <img width="749" height="533" alt="2-Server Manager-Installing AD" src="https://github.com/user-attachments/assets/0e0c2479-0bb1-49c2-ba4c-00d0f3aedc64" />
 
-*Selected Role-based or the standard option for adding roles to the server*
+*Selected Role-based or feature-based installation, the standard option for adding roles to a specific server.*
 
 ---
 
 <img width="749" height="531" alt="3-Server Manager-Installing AD" src="https://github.com/user-attachments/assets/d17ac287-421c-4a0e-820d-195e69d6c281" />
 
-* On the Server selection, The local server (DC01) is automatically selected. Click Next to continue.*
+*On the Server Selection page, DC01 was automatically selected as the target server.*
 
 ---
 
 <img width="750" height="536" alt="4-Server Manager-Installing AD selecting AD, DHCP and DNS" src="https://github.com/user-attachments/assets/28a0f43e-ddac-4c43-9419-b24d3f8ea8f7" />
 
-*Selecting Active Directory Domain Services (AD DS) from the Server Roles list.*
+*Selected Active Directory Domain Services (AD DS) from the Server Roles list.*
 
 ---
 
 <img width="749" height="534" alt="5-Server Manager-Installing AD" src="https://github.com/user-attachments/assets/b0917c7d-67c8-4e95-986d-6710a3775da5" />
 
-*After selecting AD DS, a pop-up appears prompting to add required features. I will click Add features to continue.*
+*Accepted the prompt to add the supporting features required by AD DS, including Group Policy Management and the AD administrative tools.*
 
 ---
 
 <img width="751" height="525" alt="6-Server Manager-Installing AD selecting AD, DHCP and DNS" src="https://github.com/user-attachments/assets/6941164c-90f8-4300-99a0-4f09dfcf1056" />
 
-*I will also select DHCP and DNS which will be configuring later*
+*Also selected the DHCP and DNS roles for installation. DHCP will be configured in a later stage.*
 
 ---
 
 <img width="752" height="537" alt="7-Server Manager-Installing AD selecting AD, DHCP and DNS" src="https://github.com/user-attachments/assets/9849ed75-4714-457e-83fd-be387af291dc" />
 
-*After selecting these roles, a pop-up appears again prompting to add required features. I will click again onto Add features to continue.*
+*Accepted the prompt to add the supporting features required by the DHCP role.*
 
 ---
 
 <img width="747" height="532" alt="8-Server Manager-Installing AD selecting AD, DHCP and DNS" src="https://github.com/user-attachments/assets/283d0fac-0443-404e-9c51-074c3ce2ea11" />
 
-*The same will appear for DNS click Add Features to continue*
+*Accepted the same prompt for DNS, which adds the DNS administrative tools.*
 
 ---
 
 <img width="751" height="528" alt="9-Server Manager-Installing AD" src="https://github.com/user-attachments/assets/d2877c3c-4c03-4480-ac47-3f5ae24b321c" />
 
-*The Server roles have now all been selected as mentioned. I will click on next to continue*
+*All three server roles selected: AD DS, DHCP, and DNS. Continued to the Features page.*
 
 ---
 
 <img width="747" height="533" alt="10-Server Manager-Installing AD" src="https://github.com/user-attachments/assets/02806d75-c52f-4a2b-833d-11986f71c489" />
 
-
-*We will not add anymore features so click next to continue*
+*Retained default feature selections. No additional features were required for this build.*
 
 ---
 
 <img width="747" height="535" alt="11-Server Manager-Installing AD" src="https://github.com/user-attachments/assets/1b7192ec-2c1d-46e3-8bce-ae5e8be1da5b" />
 
-*On the AD DS part of the wizard just click next and continue*
+*AD DS information page. No configuration required at this stage as the role is configured during promotion.*
+
 ---
 
 <img width="746" height="528" alt="12-Server Manager-Installing AD" src="https://github.com/user-attachments/assets/99590174-e2d3-4e11-90e7-4efe15939ff9" />
-*On the DHCP menu click next to continue.*
 
+*DHCP information page. The role will be configured in a later stage.*
 
 ---
 
 <img width="747" height="530" alt="13-Server Manager-Installing AD" src="https://github.com/user-attachments/assets/7925a631-4616-4447-8901-e4d633d6d91d" />
 
-*Same thing for DNS click next to continue.*
+*DNS information page. DNS will be configured automatically when DC01 is promoted to a domain controller.*
 
 ---
 
 <img width="746" height="530" alt="14-Server Manager-Installing AD" src="https://github.com/user-attachments/assets/31b20ab3-9ecd-482b-8e71-220b83e43294" />
-*Roles and features successfully installed. The server is now ready for promotion to a domain controller.*
+
+*Confirmation page listing AD DS, DHCP, and DNS along with their supporting features prior to installation.*
 
 ---
 
 <img width="747" height="531" alt="15 - Roles and features successfully installed" src="https://github.com/user-attachments/assets/521194e7-b566-4f56-ad6d-3050b9dfcb68" />
 
+*Roles and features successfully installed. The server is now ready for promotion to a domain controller.*
 
 
 ---
