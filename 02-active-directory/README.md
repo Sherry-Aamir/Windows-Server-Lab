@@ -19,19 +19,19 @@
 ---
 
 ## Steps Completed
-- Installed the Active Directory Domain Services role via Server Manager
-- Installed the DHCP role alongside AD DS for configuration in a later stage
+- Installed the AD DS role through Server Manager
+- Installed DHCP at the same time so I can configure it in a later stage
 - Promoted DC01 to a domain controller using the AD DS Configuration Wizard
 - Created a new forest with the root domain `sherry.local`
-- Set the Directory Services Restore Mode (DSRM) recovery password
-- Allowed the server to reboot to complete promotion
-- Logged back in using the new domain credentials (SHERRY\Administrator)
+- Set the DSRM recovery password
+- Let the server reboot to finish the promotion
+- Logged back in with the new domain credentials (SHERRY\Administrator)
 
 ---
 
 ## Verification
-- Login screen displays `SHERRY\Administrator` after reboot, confirming domain membership
-- PowerShell `Get-ADDomain` returns full domain details:
+- Login screen shows `SHERRY\Administrator` after the reboot, which confirms the domain is set up
+- PowerShell `Get-ADDomain` returns the full domain details:
   - DNSRoot: sherry.local
   - NetBIOSName: SHERRY
   - PDCEmulator: DC01.sherry.local
@@ -40,10 +40,10 @@
 ---
 
 ## Notes
-- DNS is automatically installed and configured as part of AD DS promotion. The DC becomes the authoritative DNS server for `sherry.local`.
-- The DHCP role was installed in this stage but will be configured separately in a later stage.
-- The DSRM password is a recovery credential used only when starting the DC in safe mode for directory repair. It is separate from the standard domain administrator password.
-- A single DC is sufficient for a lab environment, but in production a second DC would be deployed for redundancy and replication.
+- DNS gets installed and configured automatically as part of the AD DS promotion. The DC ends up as the authoritative DNS server for `sherry.local`.
+- I installed DHCP in this stage too but I'll configure it properly later on.
+- The DSRM password is just for recovery. You only use it if you boot the DC into safe mode to repair the directory. It's separate from the normal domain admin password.
+- One DC is fine for a lab. In production you'd want a second one for redundancy and replication.
 
 ---
 
@@ -53,94 +53,91 @@
 
 <img width="1299" height="879" alt="1-Server Manager-Installing AD" src="https://github.com/user-attachments/assets/ec2da47d-c423-415e-98e8-276ab1a062b1" />
 
-*Opened Server Manager on DC01 and selected Add Roles and Features from the Manage menu.*
+*Opened Server Manager on DC01 and went to Manage > Add Roles and Features.*
 
 ---
 
 <img width="749" height="533" alt="2-Server Manager-Installing AD" src="https://github.com/user-attachments/assets/0e0c2479-0bb1-49c2-ba4c-00d0f3aedc64" />
 
-*Selected Role-based or feature-based installation, the standard option for adding roles to a specific server.*
+*Picked Role-based or feature-based installation since I'm just adding roles to this one server.*
 
 ---
 
 <img width="749" height="531" alt="3-Server Manager-Installing AD" src="https://github.com/user-attachments/assets/d17ac287-421c-4a0e-820d-195e69d6c281" />
 
-*On the Server Selection page, DC01 was automatically selected as the target server.*
+*DC01 was already selected on the Server Selection page so I just continued.*
 
 ---
 
 <img width="750" height="536" alt="4-Server Manager-Installing AD selecting AD, DHCP and DNS" src="https://github.com/user-attachments/assets/28a0f43e-ddac-4c43-9419-b24d3f8ea8f7" />
 
-*Selected Active Directory Domain Services (AD DS) from the Server Roles list.*
+*Ticked Active Directory Domain Services from the Server Roles list.*
 
 ---
 
 <img width="749" height="534" alt="5-Server Manager-Installing AD" src="https://github.com/user-attachments/assets/b0917c7d-67c8-4e95-986d-6710a3775da5" />
 
-*Accepted the prompt to add the supporting features required by AD DS, including Group Policy Management and the AD administrative tools.*
+*A pop-up appeared asking to add the features AD DS needs (Group Policy Management and the admin tools). Clicked Add Features.*
 
 ---
 
 <img width="751" height="525" alt="6-Server Manager-Installing AD selecting AD, DHCP and DNS" src="https://github.com/user-attachments/assets/6941164c-90f8-4300-99a0-4f09dfcf1056" />
 
-*Also selected the DHCP and DNS roles for installation. DHCP will be configured in a later stage.*
+*Also ticked DHCP and DNS while I was here. I'll set DHCP up properly in a later stage.*
 
 ---
 
 <img width="752" height="537" alt="7-Server Manager-Installing AD selecting AD, DHCP and DNS" src="https://github.com/user-attachments/assets/9849ed75-4714-457e-83fd-be387af291dc" />
 
-*Accepted the prompt to add the supporting features required by the DHCP role.*
+*Same kind of pop-up for DHCP. Added the features and moved on.*
 
 ---
 
 <img width="747" height="532" alt="8-Server Manager-Installing AD selecting AD, DHCP and DNS" src="https://github.com/user-attachments/assets/283d0fac-0443-404e-9c51-074c3ce2ea11" />
 
-*Accepted the same prompt for DNS, which adds the DNS administrative tools.*
+*And again for DNS. Added the features.*
 
 ---
 
 <img width="751" height="528" alt="9-Server Manager-Installing AD" src="https://github.com/user-attachments/assets/d2877c3c-4c03-4480-ac47-3f5ae24b321c" />
 
-*All three server roles selected: AD DS, DHCP, and DNS. Continued to the Features page.*
+*All three roles ticked: AD DS, DHCP and DNS. Carried on to the Features page.*
 
 ---
 
 <img width="747" height="533" alt="10-Server Manager-Installing AD" src="https://github.com/user-attachments/assets/02806d75-c52f-4a2b-833d-11986f71c489" />
 
-*Retained default feature selections. No additional features were required for this build.*
+*Didn't need anything extra here so left the defaults and continued.*
 
 ---
 
 <img width="747" height="535" alt="11-Server Manager-Installing AD" src="https://github.com/user-attachments/assets/1b7192ec-2c1d-46e3-8bce-ae5e8be1da5b" />
 
-*AD DS information page. No configuration required at this stage as the role is configured during promotion.*
+*Just an info page about AD DS. The actual config happens later when I promote the server.*
 
 ---
 
 <img width="746" height="528" alt="12-Server Manager-Installing AD" src="https://github.com/user-attachments/assets/99590174-e2d3-4e11-90e7-4efe15939ff9" />
 
-*DHCP information page. The role will be configured in a later stage.*
+*Same idea for DHCP. Just info, I'll configure it in a later stage.*
 
 ---
 
 <img width="747" height="530" alt="13-Server Manager-Installing AD" src="https://github.com/user-attachments/assets/7925a631-4616-4447-8901-e4d633d6d91d" />
 
-*DNS information page. DNS will be configured automatically when DC01 is promoted to a domain controller.*
+*And the DNS info page. DNS gets configured automatically during the AD DS promotion so nothing to do here.*
 
 ---
 
 <img width="746" height="530" alt="14-Server Manager-Installing AD" src="https://github.com/user-attachments/assets/31b20ab3-9ecd-482b-8e71-220b83e43294" />
 
-*Confirmation page listing AD DS, DHCP, and DNS along with their supporting features prior to installation.*
+*Confirmation screen showing AD DS, DHCP and DNS along with their features before installing.*
 
 ---
 
 <img width="747" height="531" alt="15 - Roles and features successfully installed" src="https://github.com/user-attachments/assets/521194e7-b566-4f56-ad6d-3050b9dfcb68" />
 
-*Roles and features successfully installed. The server is now ready for promotion to a domain controller.*
-
-
----
+*All three roles installed. Server's now ready to be promoted to a domain controller.*
 
 ### Promoting to Domain Controller
 
