@@ -141,66 +141,73 @@
 
 ### Promoting to Domain Controller
 
+### Promoting to Domain Controller
+
 <img width="1830" height="866" alt="16 - AD config from flag yellow icon" src="https://github.com/user-attachments/assets/fc266d7d-cc10-4657-8018-cd6a06eeb53f" />
 
-*Post-deployment configuration notification. Clicked the yellow triangle on the top right then you click "Promote this server to a domain controller" from the flag in Server Manager.*
+*Once the roles finished installing, a yellow flag appeared at the top right of Server Manager. Clicked it and chose "Promote this server to a domain controller".*
 
 ---
 
 <img width="722" height="531" alt="17 - Wizard AD DS setup" src="https://github.com/user-attachments/assets/020eeb8d-8532-47a9-a30a-cd5efa08ffdb" />
 
-*Selecting "Add a new forest"*
+*Picked "Add a new forest" since this is the first DC in a brand new environment.*
 
 ---
 
 <img width="724" height="531" alt="18 - Wizard AD DS setup" src="https://github.com/user-attachments/assets/91f84bf8-568d-4c42-9f53-e11d489de308" />
-*Then I entered the root domain `sherry.local`.*
 
-
+*Entered `sherry.local` as the root domain name.*
 
 ---
 
 <img width="725" height="530" alt="19 - Wizard AD DS setup" src="https://github.com/user-attachments/assets/b59237ee-4a0d-41a2-856e-152b2ea1f634" />
 
-*Domain Controller Options. Setting functional levels, enabling DNS and Global Catalog, and entering the DSRM password.*
-
+*Set the forest and domain functional levels to Windows Server 2016. Left DNS and Global Catalog ticked since they're needed on the first DC, then set the DSRM recovery password.*
 
 ---
 
 <img width="727" height="528" alt="20- Wizard AD DS setup" src="https://github.com/user-attachments/assets/3bcf9991-503c-4498-ba30-8bd560c21511" />
-*DNS Options page. The delegation warning can be ignored in a new forest.*
 
+*DNS Options page. The delegation warning is fine to ignore here since this is a brand new forest with no parent DNS zone to delegate from.*
 
 ---
 
 <img width="722" height="532" alt="21 - Wizard AD DS setup" src="https://github.com/user-attachments/assets/90dd7a6b-2a47-4e7a-86b2-0704914def94" />
-*Additional Options. NetBIOS name auto-populates as `SHERRY`.*
 
+*NetBIOS name auto-filled as `SHERRY` based on the domain. Left it as the default.*
 
 ---
 
 <img width="721" height="530" alt="22 - Wizard AD DS setup" src="https://github.com/user-attachments/assets/1eedc9a6-f831-43e0-b648-78af1a74976a" />
 
-*Paths page. Default locations for database, logs, and SYSVOL are retained.*
-
+*Kept the default paths for the database, logs and SYSVOL. In production you'd usually put these on separate drives but for a lab the defaults are fine.*
 
 ---
 
 <img width="724" height="529" alt="23 - Wizard AD DS setup" src="https://github.com/user-attachments/assets/77d65b24-f714-4383-9e5a-11c847d7e417" />
-*Review Options. Final configuration summary.*
 
+*Final review of all the settings before kicking it off.*
 
 ---
 
 <img width="725" height="531" alt="24 - Wizard AD DS setup installation" src="https://github.com/user-attachments/assets/de8bb437-2f0f-415e-8524-fa2f6b55b1d0" />
-*Prerequisites Check. Warnings are expected and can be ignored in a lab environment. Then I click on install*
 
+*Prerequisites check passed. The warnings are expected for a lab build so I clicked Install.*
 
 ---
 
 <img width="727" height="533" alt="25 - Wizard AD DS setup installed and rebooting on its own" src="https://github.com/user-attachments/assets/8229472c-1dfe-43b9-ad01-c63288ccfee0" />
 
-*Promotion complete. The server reboots automatically.*
+*Promotion finished. Server rebooted on its own to finish things off.*
+
+---
+
+### Verification
+
+<img width="962" height="876" alt="26 - AD successfully installed and showing login screen" src="https://github.com/user-attachments/assets/493cb8f1-c71f-4a16-aa30-e35d56bed95d" />
+
+*Login screen now shows `SHERRY\Administrator` which confirms DC01 is properly part of the domain.*
 
 ---
 
