@@ -83,13 +83,13 @@
 
 <img width="751" height="525" alt="6-Server Manager-Installing AD selecting AD, DHCP and DNS" src="https://github.com/user-attachments/assets/6941164c-90f8-4300-99a0-4f09dfcf1056" />
 
-*Also ticked DHCP and DNS while I was here. I'll set DHCP up properly in a later stage.*
+*Also ticked DHCP and DNS while I was here as they will be configured in stage 3.*
 
 ---
 
 <img width="752" height="537" alt="7-Server Manager-Installing AD selecting AD, DHCP and DNS" src="https://github.com/user-attachments/assets/9849ed75-4714-457e-83fd-be387af291dc" />
 
-*Same kind of pop-up for DHCP. Added the features and moved on.*
+*Same kind of pop-up for DHCP. Added the features and continued.*
 
 ---
 
@@ -101,7 +101,7 @@
 
 <img width="751" height="528" alt="9-Server Manager-Installing AD" src="https://github.com/user-attachments/assets/d2877c3c-4c03-4480-ac47-3f5ae24b321c" />
 
-*All three roles ticked: AD DS, DHCP and DNS. Carried on to the Features page.*
+*All three roles ticked: AD DS, DHCP and DNS. Cliked next and Carried on to the Features page.*
 
 ---
 
@@ -131,7 +131,7 @@
 
 <img width="746" height="530" alt="14-Server Manager-Installing AD" src="https://github.com/user-attachments/assets/31b20ab3-9ecd-482b-8e71-220b83e43294" />
 
-*Confirmation screen showing AD DS, DHCP and DNS along with their features before installing.*
+*Confirmation screen showing AD DS, DHCP and DNS along with their features before installing. Then I clicked install*
 
 ---
 
