@@ -209,10 +209,8 @@
 
 *Login screen now shows `SHERRY\Administrator` which confirms DC01 is properly part of the domain.*
 
+<img width="963" height="595" alt="image" src="https://github.com/user-attachments/assets/6447b32e-620a-497e-8197-c7ffb1823d4a" />
+
+*Opened Powershell and using the command 'Get-ADdomain' to verify the installation*
+
 ---
-
-### Verification
-
-<img width="962" height="876" alt="26 - AD successfully installed and showing login screen" src="https://github.com/user-attachments/assets/493cb8f1-c71f-4a16-aa30-e35d56bed95d" />
-
-*Login screen displays `SHERRY\Administrator`, confirming DC01 is now a domain controller.*
