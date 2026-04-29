@@ -51,19 +51,19 @@
 
 <img width="1299" height="879" alt="1-Server Manager-Installing AD" src="https://github.com/user-attachments/assets/ec2da47d-c423-415e-98e8-276ab1a062b1" />
 
-*Server Manager open on DC01 prior to installing the AD DS role. Launching the Add Roles and Features Wizard from the Manage menu.*
+*Locate onto the server manager and selected the Add Roles and Features menu. *
 
 ---
 
 <img width="749" height="533" alt="2-Server Manager-Installing AD" src="https://github.com/user-attachments/assets/0e0c2479-0bb1-49c2-ba4c-00d0f3aedc64" />
 
-*"Before You Begin" page of the wizard. Click Next to continue and leave the installation type as Role-based.*
+*Selected Role-based or the standard option for adding roles to the server*
 
 ---
 
 <img width="749" height="531" alt="3-Server Manager-Installing AD" src="https://github.com/user-attachments/assets/d17ac287-421c-4a0e-820d-195e69d6c281" />
 
-*Server Selection page. The local server (DC01) is automatically selected. Click Next to continue.*
+* On the Server selection, The local server (DC01) is automatically selected. Click Next to continue.*
 
 ---
 
@@ -75,31 +75,31 @@
 
 <img width="749" height="534" alt="5-Server Manager-Installing AD" src="https://github.com/user-attachments/assets/b0917c7d-67c8-4e95-986d-6710a3775da5" />
 
-*After selecting AD DS, a pop-up appears prompting to add required features. Click "Add Features" to continue.*
+*After selecting AD DS, a pop-up appears prompting to add required features. I will click Add features to continue.*
 
 ---
 
 <img width="751" height="525" alt="6-Server Manager-Installing AD selecting AD, DHCP and DNS" src="https://github.com/user-attachments/assets/6941164c-90f8-4300-99a0-4f09dfcf1056" />
 
-*Continuing to the Features page with default selections retained.*
+*I will also select DHCP and DNS which will be configuring later*
 
 ---
 
 <img width="752" height="537" alt="7-Server Manager-Installing AD selecting AD, DHCP and DNS" src="https://github.com/user-attachments/assets/9849ed75-4714-457e-83fd-be387af291dc" />
 
-*Click Next to proceed with default feature selections.*
+*After selecting these roles, a pop-up appears again prompting to add required features. I will click again onto Add features to continue.*
 
 ---
 
 <img width="747" height="532" alt="8-Server Manager-Installing AD selecting AD, DHCP and DNS" src="https://github.com/user-attachments/assets/283d0fac-0443-404e-9c51-074c3ce2ea11" />
 
-*Active Directory Domain Services information page describing the role.*
+*The same will appear for DNS click Add Features to continue*
 
 ---
 
 <img width="751" height="528" alt="9-Server Manager-Installing AD" src="https://github.com/user-attachments/assets/d2877c3c-4c03-4480-ac47-3f5ae24b321c" />
 
-*Confirmation page listing selected roles and features before installation.*
+*The Server roles have now all been selected as mentioned. I will click on next to continue*
 
 ---
 
@@ -111,25 +111,25 @@
 
 <img width="747" height="535" alt="11-Server Manager-Installing AD" src="https://github.com/user-attachments/assets/1b7192ec-2c1d-46e3-8bce-ae5e8be1da5b" />
 
-*Installation continuing.*
+*We will not add anymore features so click next to continue*
 
 ---
 
 <img width="746" height="528" alt="12-Server Manager-Installing AD" src="https://github.com/user-attachments/assets/99590174-e2d3-4e11-90e7-4efe15939ff9" />
 
-*Installation nearing completion.*
+*On the AD DS part of the wizard just click next and continue.*
 
 ---
 
 <img width="747" height="530" alt="13-Server Manager-Installing AD" src="https://github.com/user-attachments/assets/7925a631-4616-4447-8901-e4d633d6d91d" />
 
-*Final installation stage.*
+*On the DHCP menu click next to continue.*
 
 ---
 
 <img width="746" height="530" alt="14-Server Manager-Installing AD" src="https://github.com/user-attachments/assets/31b20ab3-9ecd-482b-8e71-220b83e43294" />
 
-*Installation completed.*
+*Same thing for DNS click next to continue.*
 
 ---
 
