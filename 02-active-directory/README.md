@@ -211,6 +211,6 @@
 
 <img width="963" height="595" alt="image" src="https://github.com/user-attachments/assets/6447b32e-620a-497e-8197-c7ffb1823d4a" />
 
-*Opened Powershell and using the command 'Get-ADdomain' to verify the installation*
+*Opened Powershell and using the command `Get-ADdomain` to verify the installation*
 
 ---
