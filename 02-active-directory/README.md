@@ -143,55 +143,59 @@
 
 <img width="1830" height="866" alt="16 - AD config from flag yellow icon" src="https://github.com/user-attachments/assets/fc266d7d-cc10-4657-8018-cd6a06eeb53f" />
 
-*Post-deployment configuration notification. Click "Promote this server to a domain controller" from the flag in Server Manager.*
+*Post-deployment configuration notification. Clicked the yellow triangle on the top right then you click "Promote this server to a domain controller" from the flag in Server Manager.*
 
 ---
 
 <img width="722" height="531" alt="17 - Wizard AD DS setup" src="https://github.com/user-attachments/assets/020eeb8d-8532-47a9-a30a-cd5efa08ffdb" />
 
-*Selecting "Add a new forest" and entering the root domain name `sherry.local`.*
+*Selecting "Add a new forest"*
 
 ---
 
 <img width="724" height="531" alt="18 - Wizard AD DS setup" src="https://github.com/user-attachments/assets/91f84bf8-568d-4c42-9f53-e11d489de308" />
+*Then I entered the root domain `sherry.local`.*
 
-*Domain Controller Options. Setting functional levels, enabling DNS and Global Catalog, and entering the DSRM password.*
+
 
 ---
 
 <img width="725" height="530" alt="19 - Wizard AD DS setup" src="https://github.com/user-attachments/assets/b59237ee-4a0d-41a2-856e-152b2ea1f634" />
 
-*DNS Options page. The delegation warning can be ignored in a new forest.*
+*Domain Controller Options. Setting functional levels, enabling DNS and Global Catalog, and entering the DSRM password.*
+
 
 ---
 
 <img width="727" height="528" alt="20- Wizard AD DS setup" src="https://github.com/user-attachments/assets/3bcf9991-503c-4498-ba30-8bd560c21511" />
+*DNS Options page. The delegation warning can be ignored in a new forest.*
 
-*Additional Options. NetBIOS name auto-populates as `SHERRY`.*
 
 ---
 
 <img width="722" height="532" alt="21 - Wizard AD DS setup" src="https://github.com/user-attachments/assets/90dd7a6b-2a47-4e7a-86b2-0704914def94" />
+*Additional Options. NetBIOS name auto-populates as `SHERRY`.*
 
-*Paths page. Default locations for database, logs, and SYSVOL are retained.*
 
 ---
 
 <img width="721" height="530" alt="22 - Wizard AD DS setup" src="https://github.com/user-attachments/assets/1eedc9a6-f831-43e0-b648-78af1a74976a" />
 
-*Review Options. Final configuration summary.*
+*Paths page. Default locations for database, logs, and SYSVOL are retained.*
+
 
 ---
 
 <img width="724" height="529" alt="23 - Wizard AD DS setup" src="https://github.com/user-attachments/assets/77d65b24-f714-4383-9e5a-11c847d7e417" />
+*Review Options. Final configuration summary.*
 
-*Prerequisites Check. Warnings are expected and can be ignored in a lab environment.*
 
 ---
 
 <img width="725" height="531" alt="24 - Wizard AD DS setup installation" src="https://github.com/user-attachments/assets/de8bb437-2f0f-415e-8524-fa2f6b55b1d0" />
+*Prerequisites Check. Warnings are expected and can be ignored in a lab environment.*
+Promotion in progress. AD DS and DNS are being configured.
 
-*Promotion in progress. AD DS and DNS are being configured.*
 
 ---
 
