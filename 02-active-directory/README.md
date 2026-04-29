@@ -105,37 +105,36 @@
 
 <img width="747" height="533" alt="10-Server Manager-Installing AD" src="https://github.com/user-attachments/assets/02806d75-c52f-4a2b-833d-11986f71c489" />
 
-*Installation in progress.*
-
----
-
-<img width="747" height="535" alt="11-Server Manager-Installing AD" src="https://github.com/user-attachments/assets/1b7192ec-2c1d-46e3-8bce-ae5e8be1da5b" />
 
 *We will not add anymore features so click next to continue*
 
 ---
 
-<img width="746" height="528" alt="12-Server Manager-Installing AD" src="https://github.com/user-attachments/assets/99590174-e2d3-4e11-90e7-4efe15939ff9" />
+<img width="747" height="535" alt="11-Server Manager-Installing AD" src="https://github.com/user-attachments/assets/1b7192ec-2c1d-46e3-8bce-ae5e8be1da5b" />
 
-*On the AD DS part of the wizard just click next and continue.*
+*On the AD DS part of the wizard just click next and continue*
+---
+
+<img width="746" height="528" alt="12-Server Manager-Installing AD" src="https://github.com/user-attachments/assets/99590174-e2d3-4e11-90e7-4efe15939ff9" />
+*On the DHCP menu click next to continue.*
+
 
 ---
 
 <img width="747" height="530" alt="13-Server Manager-Installing AD" src="https://github.com/user-attachments/assets/7925a631-4616-4447-8901-e4d633d6d91d" />
 
-*On the DHCP menu click next to continue.*
+*Same thing for DNS click next to continue.*
 
 ---
 
 <img width="746" height="530" alt="14-Server Manager-Installing AD" src="https://github.com/user-attachments/assets/31b20ab3-9ecd-482b-8e71-220b83e43294" />
-
-*Same thing for DNS click next to continue.*
+*Roles and features successfully installed. The server is now ready for promotion to a domain controller.*
 
 ---
 
 <img width="747" height="531" alt="15 - Roles and features successfully installed" src="https://github.com/user-attachments/assets/521194e7-b566-4f56-ad6d-3050b9dfcb68" />
 
-*Roles and features successfully installed. The server is now ready for promotion to a domain controller.*
+
 
 ---
 
