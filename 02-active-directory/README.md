@@ -193,8 +193,7 @@
 ---
 
 <img width="725" height="531" alt="24 - Wizard AD DS setup installation" src="https://github.com/user-attachments/assets/de8bb437-2f0f-415e-8524-fa2f6b55b1d0" />
-*Prerequisites Check. Warnings are expected and can be ignored in a lab environment.*
-Promotion in progress. AD DS and DNS are being configured.
+*Prerequisites Check. Warnings are expected and can be ignored in a lab environment. Then I click on install*
 
 
 ---
