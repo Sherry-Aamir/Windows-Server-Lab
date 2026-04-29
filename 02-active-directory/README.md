@@ -101,7 +101,7 @@
 
 <img width="751" height="528" alt="9-Server Manager-Installing AD" src="https://github.com/user-attachments/assets/d2877c3c-4c03-4480-ac47-3f5ae24b321c" />
 
-*All three roles ticked: AD DS, DHCP and DNS. Cliked next and Carried on to the Features page.*
+*All three roles ticked: AD DS, DHCP and DNS. Cliked next and carried on to the Features page.*
 
 ---
 
@@ -138,8 +138,6 @@
 <img width="747" height="531" alt="15 - Roles and features successfully installed" src="https://github.com/user-attachments/assets/521194e7-b566-4f56-ad6d-3050b9dfcb68" />
 
 *All three roles installed. Server's now ready to be promoted to a domain controller.*
-
-### Promoting to Domain Controller
 
 ### Promoting to Domain Controller
 
@@ -209,6 +207,7 @@
 
 *Login screen now shows `SHERRY\Administrator` which confirms DC01 is properly part of the domain.*
 
+---
 <img width="963" height="595" alt="image" src="https://github.com/user-attachments/assets/6447b32e-620a-497e-8197-c7ffb1823d4a" />
 
 *Opened Powershell and using the command `Get-ADdomain` to verify the installation*
