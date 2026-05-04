@@ -82,12 +82,12 @@
 
 <img width="744" height="572" alt="5 - Creating another OU by clicking on Domain Users folder then new then Organization Unit" src="https://github.com/user-attachments/assets/3b4ff096-d7eb-44e9-89e0-4c2cfc81bf7d" />
 
+*Right clicked on the Domain Users OU and chose New > Organizational Unit.*
 
-<!-- Images 5-8: Standard Users and IT Admins sub-OUs being created (you may have these as separate shots) -->
 
 <img width="713" height="504" alt="6 - Creating the OU called Standard Users" src="https://github.com/user-attachments/assets/a3e96461-74ff-4190-be73-7c5eb3a57dbd" />
 
-*Right clicked on the Domain Users OU and chose New > Organizational Unit then named it Standard Users.*
+*I have named it Standard Users.*
 
 <img width="725" height="501" alt="7 - using the same process as the 5, Another OU created called IT Admins" src="https://github.com/user-attachments/assets/344307d7-9229-47d9-b0aa-85fdfe1d7679" />
 
