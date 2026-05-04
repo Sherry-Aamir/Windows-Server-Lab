@@ -85,6 +85,12 @@
 
 <!-- Images 5-8: Standard Users and IT Admins sub-OUs being created (you may have these as separate shots) -->
 
+<img width="713" height="504" alt="6 - Creating the OU called Standard Users" src="https://github.com/user-attachments/assets/a3e96461-74ff-4190-be73-7c5eb3a57dbd" />
+*Right clicked on the Standard Users OU and chose New > *
+
+
+
+
 ### Creating the Standard User
 
 <!-- Image 9 -->
