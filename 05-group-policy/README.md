@@ -289,43 +289,50 @@
 
 ---
 
+<img width="660" height="608" alt="37 - Clicked enabled and made a comment then clicked apply then OK" src="https://github.com/user-attachments/assets/5c75a10e-b463-4702-8fbb-e2a6c582af47" />
 
 
 *Enabled it with a short comment, clicked Apply then OK.*
 
 ---
 
-<!-- Image 38 -->
+<img width="583" height="532" alt="38 - Confirmed as both enabled" src="https://github.com/user-attachments/assets/c63cc1d3-6898-4686-8f1d-7fa217632c1c" />
+
 
 *Confirmation showing both cmd and regedit are now Enabled with the comments visible.*
 
 ---
 
-<!-- Image 39 -->
+<img width="966" height="841" alt="39 - Locating onto user config, policies, admin templates, windows components  then windows powershell then hovering over it" src="https://github.com/user-attachments/assets/06b0d156-b1d8-45f4-a0b3-3f5990f0c220" />
+
 
 *Navigated to User Configuration > Policies > Administrative Templates > Windows Components > Windows PowerShell to block scripts.*
 
 ---
 
-<!-- Image 40 -->
+<img width="652" height="610" alt="40 - Disabling Powershell scripts clicking apply and OK" src="https://github.com/user-attachments/assets/41209a09-40ba-4060-9e4e-27ec23ae63b0" />
+
 
 *Set "Turn on Script Execution" to Disabled. This blocks .ps1 files from running but doesn't block the PowerShell console itself. Clicked Apply and OK.*
 
 ---
 
-<!-- Image 41 -->
+<img width="965" height="319" alt="41 - Going to the administrative templates then control panel" src="https://github.com/user-attachments/assets/e3a69b5d-20b8-48e5-a646-77055506f9b1" />
+
 
 *Last one, navigated to Administrative Templates > Control Panel.*
 
 ---
 
-<!-- Image 42 -->
+<img width="651" height="609" alt="42 - Clicking enabled on the setting then apply then OK" src="https://github.com/user-attachments/assets/2e323c8e-dc87-43b9-b0ef-9524c0fd22d4" />
+
 
 *Found "Prohibit access to Control Panel and PC settings" and clicked it.*
 
 ---
 
-<!-- Image 43 -->
+<img width="970" height="581" alt="42 - Clicking on prohibit access to control panel and PC settings" src="https://github.com/user-attachments/assets/781bdfc6-0e16-4c5a-9e47-25f0000bd782" />
+
 
 *Set it to Enabled, clicked Apply then OK.*
 
@@ -333,7 +340,7 @@
 
 ### Pushing the Policies
 
-<!-- Image 44 (your gpupdate one, may be numbered 43 in your files) -->
+<img width="916" height="482" alt="43 - Running gpupdate command on server to make sure policies are updated asap" src="https://github.com/user-attachments/assets/9547a025-aa42-400b-a0ef-ea4beba75aed" />
 
 *Ran gpupdate /force on the server to refresh the policies. This only updates the server's own policies. Clients pick up changes on their own schedule, on reboot, or when a user logs in.*
 
@@ -341,43 +348,50 @@
 
 ### Testing on Client01 as Standard User
 
-<!-- Image 44 (clean login screen) -->
+<img width="1025" height="768" alt="44 - Clean picture of login screen for client one and logging into J bloggs" src="https://github.com/user-attachments/assets/f993049b-8198-4192-a86a-3a05653564c9" />
+
 
 *Clean login screen on Client01 with just the username and password boxes. No cached user list at the bottom left. The Workstation Baseline GPO is doing its job. Typed in j.bloggs to log in as the standard user.*
 
 ---
 
-<!-- Image 45 -->
+<img width="1024" height="767" alt="45 - Opned cmd on J bloggs its disabled by gpo" src="https://github.com/user-attachments/assets/2b6f2a6f-bf13-4857-ab77-e0719959bef7" />
+
 
 *Tried to open cmd as j.bloggs. Got "The command prompt has been disabled by your administrator" exactly as expected. Standard User Restrictions GPO is applying.*
 
 ---
 
-<!-- Image 46 -->
+<img width="1022" height="760" alt="46 - Locating onto control panel" src="https://github.com/user-attachments/assets/cd1400b3-39c5-414b-83a0-19be5ebfeb01" />
+
 
 *Searched for Control Panel in the Start menu and clicked it.*
 
 ---
 
-<!-- Image 47 -->
+
+<img width="1038" height="760" alt="47 - Control panel restriciton message has come up" src="https://github.com/user-attachments/assets/f7bfcaa7-46e5-492c-b711-e2b2d385b597" />
 
 *Got the Restrictions popup: "This operation has been cancelled due to restrictions in effect on this computer. Please contact your system administrator." Control Panel is fully blocked.*
 
 ---
 
-<!-- Image 48 -->
+<img width="392" height="204" alt="48 - Running regedit" src="https://github.com/user-attachments/assets/fe8c1452-7f7b-43c4-9306-68b8673d845b" />
+
 
 *Tried to open regedit using the Run dialog.*
 
 ---
 
-<!-- Image 49 -->
+<img width="1020" height="719" alt="49 - Error msg confirming regedit has been blocked by admin" src="https://github.com/user-attachments/assets/e73b5cd5-0f91-4e45-90cb-344e544128e4" />
+
 
 *Got the registry editing block message. Standard users can't make registry changes which is exactly what we want.*
 
 ---
 
-<!-- Image 50 -->
+<img width="1028" height="718" alt="50 - Powershell should be blocked but for testing purposes on j bloggs" src="https://github.com/user-attachments/assets/48616e20-6841-4d8b-9993-3384c9734632" />
+
 
 *Opened PowerShell as j.bloggs. The console itself opens because we only blocked script execution, not the console. Ran Get-ExecutionPolicy -List to confirm the policy is in effect. UserPolicy shows as Restricted which means no scripts can run for this user. The MachinePolicy and other scopes are Undefined because the GPO only sets the user policy.*
 
@@ -385,12 +399,15 @@
 
 ### Testing on Client01 as IT Admin
 
-<!-- Image 51 -->
+<img width="1024" height="768" alt="51 - Logging on as ITAdmin" src="https://github.com/user-attachments/assets/fd3ff41c-dbb7-4355-a492-cd0b3131454c" />
+
 
 *Logged out and logged back in as it.admin to compare. Same machine, different user. Gets through the login screen the same way (no cached list).*
 
 ---
 
-<!-- Image 52 -->
+<img width="1030" height="763" alt="52 - CMD prompt of whoami" src="https://github.com/user-attachments/assets/bea9f0ae-5e3f-42fa-86a9-54a12ed36041" />
+
+
 
 *Opened cmd as it.admin and ran whoami. Cmd works fine because the Standard User Restrictions GPO is linked to the Standard Users OU. it.admin is in the IT Admins OU so none of those restrictions apply. Same machine, completely different experience based on which OU the user lives in.*
