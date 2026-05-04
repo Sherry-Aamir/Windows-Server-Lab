@@ -86,32 +86,43 @@
 <!-- Images 5-8: Standard Users and IT Admins sub-OUs being created (you may have these as separate shots) -->
 
 <img width="713" height="504" alt="6 - Creating the OU called Standard Users" src="https://github.com/user-attachments/assets/a3e96461-74ff-4190-be73-7c5eb3a57dbd" />
-*Right clicked on the Standard Users OU and chose New > *
 
+*Right clicked on the Domain Users OU and chose New > Organizational Unit then named it Standard Users.*
 
+<img width="725" height="501" alt="7 - using the same process as the 5, Another OU created called IT Admins" src="https://github.com/user-attachments/assets/344307d7-9229-47d9-b0aa-85fdfe1d7679" />
+
+*Same process again then called it IT Admins.*
+
+<img width="970" height="889" alt="8 - Dragging the clients from computers to Workstations Warning will come up just click yes on warning msg" src="https://github.com/user-attachments/assets/822de7b0-3da5-4342-9b59-e97449bc0c14" />
+
+*From the computers folder I have dragged the clients into the workstations folder a pop message will come and I clicked yes*
 
 
 ### Creating the Standard User
 
-<!-- Image 9 -->
+<img width="967" height="871" alt="9 - Right clicking on New on Standards User folder, then User" src="https://github.com/user-attachments/assets/4d2e71a0-c189-420e-983b-9f26ac79d20b" />
+
 
 *Right clicked on the Standard Users OU and chose New > User to create the test user.*
 
 ---
 
-<!-- Image 10 -->
+<img width="724" height="506" alt="10 - Creating a new user called Joe bloggs, then I click Next" src="https://github.com/user-attachments/assets/f77cab84-8fc2-4c5f-ac73-c4aeecc90f0c" />
+
 
 *Created Joe Bloggs with the logon name j.bloggs. Picked a generic name that looks realistic in a portfolio.*
 
 ---
 
-<!-- Image 11 -->
+<img width="715" height="506" alt="11 - I enter the password for Joe and untick the user must change password at next log on" src="https://github.com/user-attachments/assets/a67de4c6-25a7-4424-9f33-d87f2cc56af9" />
+
 
 *Set a password for Joe and unticked "User must change password at next logon" to save hassle when testing.*
 
 ---
 
-<!-- Image 12 -->
+<img width="722" height="504" alt="12 - I click next and finish" src="https://github.com/user-attachments/assets/f2ea407c-c311-4b42-8126-d7e37f340c8f" />
+
 
 *Confirmation page for Joe Bloggs. Clicked Finish to create the user.*
 
@@ -121,25 +132,42 @@
 
 <!-- Images 13-16: IT Admin user creation if you've got those -->
 
-<!-- Image 17 -->
+
+<img width="719" height="607" alt="13 - Right clicking on IT admins OU and selecting new then user" src="https://github.com/user-attachments/assets/b8f0eb0f-3cb9-49ad-8d6b-45b0d3be2448" />
+
+
+<img width="718" height="504" alt="14 - Filling the user details for IT admin then i will click next" src="https://github.com/user-attachments/assets/b12d6985-2a71-4268-ba2e-d31222557590" />
+
+
+<img width="725" height="503" alt="15 - I will enter the password for the IT admin and uncheck the user icon" src="https://github.com/user-attachments/assets/589fea64-416c-4ddf-9d71-aa1a97da4bec" />
+
+
+<img width="720" height="508" alt="16 - I will click finish and the user will be created" src="https://github.com/user-attachments/assets/e6ffca10-ae2f-4a4f-963f-8b50d7e2a279" />
+
+
+<img width="722" height="501" alt="17  - IT Admin needs admin access so I will right click on the user and select properties" src="https://github.com/user-attachments/assets/47136ec3-b596-4bb1-a37a-8fa449a294f0" />
+
 
 *Right clicked on the IT Admin user and chose Properties to open the user account properties.*
 
 ---
 
-<!-- Image 18 -->
+<img width="722" height="506" alt="18 - Locate the Member Of tab and select Add as seen" src="https://github.com/user-attachments/assets/1749da65-e9e5-47cd-9035-ebbd91d65f16" />
+
 
 *Went to the Member Of tab. By default the user is just a member of Domain Users. Clicked Add to give it admin rights.*
 
 ---
 
-<!-- Image 19 -->
+<img width="723" height="507" alt="19 - I will add the IT admin to Domain Admins by typing it in and clicking check Names as you see it has the line to confirm it then I will click Ok and Ok on both tabs" src="https://github.com/user-attachments/assets/408bf01c-de0e-407e-b195-30a0a4078a3d" />
+
 
 *Typed "Domain Admins" and clicked Check Names. The underline confirms it found the group. Clicked OK to add it.*
 
 ---
 
-<!-- Image 20 -->
+<img width="716" height="507" alt="20 - Here is to confirm the changes now I will click OK" src="https://github.com/user-attachments/assets/cfe333c7-a3cb-458f-8752-4fb0c213942b" />
+
 
 *IT Admin is now a member of both Domain Users and Domain Admins. Clicked OK to save the changes.*
 
@@ -147,61 +175,71 @@
 
 ### Creating the Workstation Baseline GPO
 
-<!-- Image 21 -->
+<img width="959" height="870" alt="21 - Now to apply policies and restrictions we head to group policy via server manager" src="https://github.com/user-attachments/assets/3dbb1b1d-5a40-4094-9ce1-4890a19828e1" />
+
 
 *Opened Group Policy Management from Server Manager > Tools.*
 
 ---
 
-<!-- Image 22 -->
+<img width="973" height="641" alt="22 - Expanding my server name sherry local then I will start with the workstations I will Right click on workstations then click on Create a GPO in this domain and link it here" src="https://github.com/user-attachments/assets/a7bd793e-0dd4-4b69-bd86-46331720503e" />
+
 
 *Expanded sherry.local, right clicked on Workstations OU and chose "Create a GPO in this domain, and Link it here". This creates the GPO and links it in one step.*
 
 ---
 
-<!-- Image 23 -->
+<img width="369" height="174" alt="23 - I have called it workstations baseline then I click ok" src="https://github.com/user-attachments/assets/32166d44-a1b0-4d40-a755-303fddf3d92c" />
+
 
 *Named the GPO Workstation Baseline. Clicked OK.*
 
 ---
 
-<!-- Image 24 -->
+<img width="965" height="867" alt="24 - Once it created I will assign policies by right clicking on the Policy and clicking edit this opens a new windows" src="https://github.com/user-attachments/assets/4919df52-000f-4f73-9483-1c24ae4e1ca4" />
+
 
 *GPO is now linked to Workstations. Right clicked on it and chose Edit to open the Group Policy Management Editor.*
 
 ---
 
-<!-- Image 25 -->
+<img width="962" height="838" alt="25 - Once on GPO editior we will assign computer config first to begin expand policies, click windows settings, then security settings" src="https://github.com/user-attachments/assets/49a8e527-f2e5-432d-bb81-4a477df6490f" />
+
 
 *Inside the editor. For machine-wide settings I expanded Computer Configuration > Policies > Windows Settings > Security Settings.*
 
 ---
 
-<!-- Image 26 -->
+<img width="967" height="860" alt="26 - Then I click on Local Policies" src="https://github.com/user-attachments/assets/99afed4f-118f-4be0-ba43-41b13e0d831c" />
+
 
 *Then clicked into Local Policies.*
 
 ---
 
-<!-- Image 27 -->
+<img width="963" height="876" alt="27 - Then I click on Security options " src="https://github.com/user-attachments/assets/9a7b39b0-444e-4f6c-9e69-b686aaf1bf7a" />
+
 
 *Then Security Options. This is where the login screen settings live.*
 
 ---
 
-<!-- Image 28 -->
+<img width="538" height="45" alt="28 Locate the following in the screenshot (I am mentioning the 2 interactive logon things)" src="https://github.com/user-attachments/assets/dc13bcd5-f12c-4820-846c-23a73d4be27a" />
+
 
 *Located the two interactive logon settings I wanted to enable.*
 
 ---
 
-<!-- Image 29 -->
+<img width="964" height="873" alt="29 - Once located do the following click on the checkbox and click enabled then click OK" src="https://github.com/user-attachments/assets/d9eef500-44d7-4850-a904-fea428def100" />
+
 
 *Enabled "Don't display last signed-in" so the login screen doesn't show previous users. Clicked OK.*
 
 ---
 
-<!-- Image 30 -->
+<img width="395" height="483" alt="30 - Do the same for the 2nd one and click OK" src="https://github.com/user-attachments/assets/1238e04e-c31c-4c0c-8579-4f1d93243487" />
+
 
 *Same for "Don't display username at sign-in" so the next user doesn't see who logged in last. Clicked OK.*
 
@@ -209,43 +247,49 @@
 
 ### Creating the Standard User Restrictions GPO
 
-<!-- Image 31 -->
+<img width="963" height="866" alt="31 - Locating back to the Domain Users OU then Standard Users OU  Right click then click on Create a GPO in this domain and link it here" src="https://github.com/user-attachments/assets/c8da89e6-2edc-49d6-8c02-4c9a4852dfa4" />
+
 
 *Back in Group Policy Management, right clicked on Standard Users OU and chose "Create a GPO in this domain, and Link it here".*
 
 ---
 
-<!-- Image 32 -->
+<img width="376" height="178" alt="32 - I have named it Standard User Restrictions" src="https://github.com/user-attachments/assets/ee6529e0-b092-454f-b017-c0b23059c941" />
+
 
 *Named this one Standard User Restrictions.*
 
 ---
 
-<!-- Image 33 -->
+<img width="969" height="867" alt="33 - Once that is created I will click on the policy and right click then click edit" src="https://github.com/user-attachments/assets/03c5e359-5827-47cc-be23-32e1306f995c" />
+
 
 *GPO is now linked to Standard Users. Right clicked it and chose Edit to configure the policies.*
 
 ---
 
-<!-- Image 34 -->
+<img width="963" height="840" alt="34 - Locate onto User config - Policies - Administrative templates - System then click on prevent acccess to cmd" src="https://github.com/user-attachments/assets/e1b8bb99-de9c-4c4c-a123-1122f61bb2f3" />
+
 
 *Navigated to User Configuration > Policies > Administrative Templates > System. Found "Prevent access to the command prompt".*
 
 ---
 
-<!-- Image 35 -->
+<img width="965" height="836" alt="34 - Locate onto User config - Policies - Administrative templates - System then right click and edit on prevent acccess to cmd" src="https://github.com/user-attachments/assets/4f8a584b-f789-4e46-a148-9e51631d93c6" />
+
 
 *Set it to Enabled and added a comment "Disabled CMD for Joe" so anyone reading the GPO later knows why it's there. Clicked Apply then OK.*
 
 ---
 
-<!-- Image 36 -->
+<img width="653" height="607" alt="35 - I will enable this and make a short comment then apply - Then OK" src="https://github.com/user-attachments/assets/c9a92450-0b76-4470-8503-a2fdacdb975c" />
+
 
 *Same for "Prevent access to registry editing tools" in the same System folder.*
 
 ---
 
-<!-- Image 37 -->
+
 
 *Enabled it with a short comment, clicked Apply then OK.*
 
