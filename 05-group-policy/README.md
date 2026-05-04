@@ -135,15 +135,17 @@
 
 <img width="719" height="607" alt="13 - Right clicking on IT admins OU and selecting new then user" src="https://github.com/user-attachments/assets/b8f0eb0f-3cb9-49ad-8d6b-45b0d3be2448" />
 
+*Now I right click on IT Admins OU, New > User*
 
 <img width="718" height="504" alt="14 - Filling the user details for IT admin then i will click next" src="https://github.com/user-attachments/assets/b12d6985-2a71-4268-ba2e-d31222557590" />
 
+*I have filled in the Admin's info and gave a logon name then I will click next *
 
 <img width="725" height="503" alt="15 - I will enter the password for the IT admin and uncheck the user icon" src="https://github.com/user-attachments/assets/589fea64-416c-4ddf-9d71-aa1a97da4bec" />
-
+*Entered a password for the user, unticked the User must change password at next logon. *
 
 <img width="720" height="508" alt="16 - I will click finish and the user will be created" src="https://github.com/user-attachments/assets/e6ffca10-ae2f-4a4f-963f-8b50d7e2a279" />
-
+*Final summary is listed and I will click finish *
 
 <img width="722" height="501" alt="17  - IT Admin needs admin access so I will right click on the user and select properties" src="https://github.com/user-attachments/assets/47136ec3-b596-4bb1-a37a-8fa449a294f0" />
 
