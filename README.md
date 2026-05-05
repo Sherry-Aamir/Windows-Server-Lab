@@ -13,7 +13,7 @@ A home lab building a Windows Server 2022 domain with Windows 11 clients. Docume
 
 - Subnet: 192.168.10.0/24
 - DC01 (Domain Controller): 192.168.10.10 (static)
-- DHCP scope: 192.168.10.100 to 192.168.10.110
+- DHCP scope: 192.168.10.20 to 192.168.10.30
 - DNS: hosted on DC01, authoritative for lab.local
 
 ## Stages
